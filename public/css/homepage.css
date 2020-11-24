@@ -1,0 +1,35 @@
+.header {
+    background-color: #02020238 !important;
+}
+
+.header.alt-color {
+    background-color: #141615a6 !important;
+    height: 70px;
+}
+
+.top {
+    background-image: url('../image/closeup-support-hands.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-end {
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 900px) {
+    .content-end {
+        justify-content: flex-start !important;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.body {
+    margin-top: 72px;
+}
