@@ -21,7 +21,7 @@
 <body>
 
     <div class="top container-fluid">
-        {{-- @include('template.header')
+        @include('header.header')
         @section('header')
         @show
 
@@ -29,7 +29,7 @@
             @include('search_doctor.sec_search')
             @section('search')
             @show
-        </div> --}}
+        </div>
     </div>
 
     <script src="{{ asset('js/jquery-3.5.1.min.js') }}"> </script>
