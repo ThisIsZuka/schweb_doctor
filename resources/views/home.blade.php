@@ -21,7 +21,7 @@
 <body>
 
     <div class="top container-fluid">
-        {{-- @include('header.header') --}}
+        @include('header.header')
         @section('header')
         @show
 
