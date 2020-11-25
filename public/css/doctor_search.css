@@ -1,0 +1,157 @@
+/* thai */
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    /* font-weight: 400; */
+    src: url(https://fonts.gstatic.com/s/prompt/v4/-W__XJnvUD7dzB2KdNodVkI.woff2) format('woff2');
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+
+
+/* vietnamese */
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    /* font-weight: 400; */
+    src: url(https://fonts.gstatic.com/s/prompt/v4/-W__XJnvUD7dzB2Kb9odVkI.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    /* font-weight: 400; */
+    src: url(https://fonts.gstatic.com/s/prompt/v4/-W__XJnvUD7dzB2KbtodVkI.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    /* font-weight: 400; */
+    src: url(https://fonts.gstatic.com/s/prompt/v4/-W__XJnvUD7dzB2KYNod.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    font-family: 'Prompt' !important;
+    /* color: white !important; */
+}
+
+
+/*---------------------------------------------------------------------- ส่วน header และ การค้รหาแพทย์ ---------------------------------------------------------------------*/
+
+.header {
+    background-color: #020202d1 !important;
+}
+
+.header.alt-color {
+    background-color: #141615a6 !important;
+    height: 60px;
+}
+
+
+/* input ค้นหาแพทย์ */
+
+.materialize-textarea {
+    color: white;
+    font-family: 'Prompt' !important;
+    font-size: 25px !important;
+    height: 50px !important;
+}
+
+.input-field>label {
+    font-size: 2rem !important;
+    top: -5px !important;
+}
+
+.input-field .prefix {
+    font-size: 3rem !important;
+}
+
+.top {
+    background-image: url('../image/closeup-support-hands_v2.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white !important;
+}
+
+.row-top {
+    margin-bottom: 0px !important;
+    margin-top: 26px !important;
+}
+
+.row_mid {
+    margin-top: -10px !important;
+    margin-bottom: -10px !important;
+}
+
+.row-bottom {
+    font-size: 25px;
+    margin-bottom: 30px !important;
+}
+
+.select-wrapper input.select-dropdown {
+    background-color: #fffefe9e !important;
+    font-family: 'Prompt' !important;
+    padding: 5px !important;
+    border-radius: 20px 20px !important;
+    font-size: 30px !important;
+    position: initial !important;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    font-size: 25px !important;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.body_form {
+    margin-top: 80px !important;
+    color: white;
+}
+
+.text_title {
+    font-size: 4.64rem;
+}
+
+
+/*---------------------------------------------------------------------- ส่วนผลการค้นหาแพทย์ ---------------------------------------------------------------------*/
+
+.content-doctor-search {
+    margin-top: 50px !important;
+    color: #d3b762bf;
+}
+
+@media only screen and (max-width: 812px) {
+    .input-field>label {
+        font-size: 1.5rem !important;
+    }
+    .materialize-textarea {
+        font-size: 18px !important;
+    }
+    .text_title {
+        font-size: 3.64rem;
+    }
+    .select-wrapper input.select-dropdown {
+        font-size: 20px !important;
+    }
+    .dropdown-content li>a,
+    .dropdown-content li>span {
+        font-size: 18px !important;
+    }
+}
