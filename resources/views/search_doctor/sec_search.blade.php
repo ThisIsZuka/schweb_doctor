@@ -27,7 +27,7 @@
 
         <div class="row row_mid">
             <div class="input-field col s12 m12">
-                <select class="icons" id="select_location">
+                <select class="select2 browser-default" id="select_location">
                     <option value="" disabled selected>ค้นหาจากแผนก</option>
                     <option value="" data-icon="images/sample-1.jpg">example 1</option>
                 </select>
@@ -44,7 +44,7 @@
 
         <div class="row">
             <div class="input-field col s12">
-                <select id="select_location_sub">
+                <select class="select2 browser-default" id="select_location_sub">
                     <option value="" disabled selected>ค้นหาจากความเชี่ยวชาญ</option>
                     <option value="1">Option 1</option>
                 </select>
@@ -68,7 +68,7 @@
 
         <div class="row">
             <div class="col s12 center-align">
-                <div class="wrapper" style="text-decoration: underline; font-size: 50px;">
+                <div class="wrapper" style="text-decoration: underline; font-size: 55px;">
                     ผลการค้นหา
                 </div>
             </div>
@@ -76,31 +76,13 @@
 
         <div class="container row">
             <div class="col s12 right-align">
-                <div class="wrapper" style="text-decoration: underline; font-size: 25px;">
+                <div class="wrapper" style="text-decoration: underline; font-size: 35px;">
                     แพทย์ที่พบ <span id="sum_doctor"></span> คน
                 </div>
             </div>
         </div>
 
-        <div class="row" id="loader">
-            <div class="col s12 center-align">
-                <div class="preloader-wrapper big active">
-                    <div class="spinner-layer spinner-blue">
-                        <div class="circle-clipper left">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="gap-patch">
-                            <div class="circle"></div>
-                        </div>
-                        <div class="circle-clipper right">
-                            <div class="circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper-container">
+        <div class="swiper-container" id="div_card">
             <div class="swiper-wrapper" id="show_data_card_pc">
                 {{-- <div class="swiper-slide">
                     <main class="page-content">
@@ -225,7 +207,7 @@
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
-            <div class="center-align" style="font-size: 35px;">
+            <div class="center-align" style="font-size: 35px; text-decoration: underline;">
                 <span id="page_now"></span>
                 of
                 <span id="page_end"></span>
