@@ -1,41 +1,40 @@
+    @section('header')
+        {{-- <nav
+            class="col-12 navbar navbar-expand-lg navbar-dark bg-dark fixed-top header alt-color">
+            <a class="navbar-brand" href="#"><img src="{{ asset('Image/logo.png') }}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-{{-- navbar --}}
-    <nav class="white" >
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo "  style="width: 160px;">
-              <img class="responsive-img" src="{{URL::asset('public')}}/assets/logo/logosamitivejchonburi.png"  alt="">
-          </a>
-          <a href="#" data-target="slide-out" class="sidenav-trigger">
-              <i class="fa fa-bars"  style="color:rgb(177 142 80);font-size: 30px;"></i>
-            </a>
-          <ul class="right hide-on-med-and-down">
-            <li><a style="color:rgb(0 71 41) ;" href="sass.html">หน้าหลัก</a></li>
-            <li><a style="color:rgb(0 71 41) ;" href="badges.html">ค้นหาแพทย์</a></li>
-            <li><a style="color:rgb(0 71 41) ;" href="collapsible.html">ภาษา</a></li>
-            {{-- <li><a style="color:rgb(0 71 41) ;" href="mobile.html">Mobile</a></li> --}}
-          </ul>
+            <div class="collapse navbar-collapse nav content-end" id="navbarSupportedContent">
+
+                <form class="form-inline my-2 my-lg-0 ">
+                    <span class="field__label">First name</span>
+                    </span>
+                </form>
+
+            </div>
+        </nav> --}}
+        <div class="navbar-fixed">
+            <nav class="header alt-color">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo"><img src="{{ asset('Image/logo.png') }}"></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a class="waves-effect waves-light btn" href="#"><i class="material-icons left" style="color: white;">home</i>กลับหน้าหลัก</a></li>
+                        {{-- <li><a class="waves-effect waves-light btn">Button</a></li>
+                        <li><a class="waves-effect waves-light btn">Button</a></li> --}}
+                    </ul>
+                </div>
+            </nav>
         </div>
-      </nav>
-{{-- Side mobile --}}
-      <ul id="slide-out" class="sidenav" style="opacity: 0.9; ">
-        <li><a href="#!">First Sidebar Link</a></li>
-        <li><a href="#!">Second Sidebar Link</a></li>
-        <li class="no-padding">
-          <ul class="collapsible collapsible-accordion" style="display:none">
-            <li>
-              <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
-              <div class="collapsible-body">
-                <ul>
-                  <li><a href="#!">First</a></li>
-                  <li><a href="#!">Second</a></li>
-                  <li><a href="#!">Third</a></li>
-                  <li><a href="#!">Fourth</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
 
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="waves-effect waves-light btn-small">กลับหน้าหลัก</a></li>
+            {{-- <li><a class="waves-effect waves-light btn-small">Button</a></li>
+            <li><a class="waves-effect waves-light btn-small">Button</a></li> --}}
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
 
-
+    @endsection
