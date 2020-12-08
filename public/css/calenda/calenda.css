@@ -1,0 +1,7 @@
+.hoverseeday:hover{
+    background-color: darkseagreen;
+    height: 58px;
+    border-radius: 52px;
+    text-align: center;
+    padding-top: 17px;
+}
