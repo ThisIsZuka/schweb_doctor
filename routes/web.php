@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::any('/{id}','Maincontroller@view');
+
 Route::get('/', function () {
     return view('doctor_search');
 });

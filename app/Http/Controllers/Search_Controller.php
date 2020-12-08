@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
-use Illuminate\Support\Facades\DB;
+use DB;
+// use Illuminate\Support\Facades\DB;
 
 class Search_Controller extends Controller
 {
@@ -95,11 +95,12 @@ class Search_Controller extends Controller
 
     public function service_location()
     {
-        $users = DB::table('ms_service_location')
-            ->select('*')
-            ->where('status', '1')
-            ->get();
-        return json_encode($users);
+        echo 'dd'
+        // $users = DB::table('ms_service_location')
+        //     ->select('*')
+        //     ->where('status', '1')
+        //     ->get();
+        // return json_encode($users);
     }
 
     public function service_location_sub()
