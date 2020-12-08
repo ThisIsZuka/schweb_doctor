@@ -1,0 +1,29 @@
+.header {
+    font-family: 'Mitr' !important;
+    background-color: #ffffff !important;
+    height: 80px;
+}
+
+.header.alt-color {
+    background-color: #ffffffab !important;
+    height: 80px;
+}
+
+nav {
+    color: #fff;
+    background-color: #ffffff !important;
+}
+
+nav .nav-wrapper {
+    margin-top: 10px;
+}
+
+.material-icons {
+    color: #d3b762bf;
+}
+
+.waves-effect {
+    border-radius: 1.25rem !important;
+    font-size: 20px !important;
+    background-color: #d3b762bf !important;
+}
